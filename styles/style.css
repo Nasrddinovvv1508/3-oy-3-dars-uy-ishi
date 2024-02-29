@@ -2,6 +2,7 @@
     --black-color: #1C1C1E;
     --blue-color: #0040DD;
     --white-color: #FFFFFF;
+    --gray-color: #646163;
 }
 
 
@@ -26,10 +27,11 @@ body {
 
     /* Header Styles */
 .header_container {
-    padding: 30px 0px;
+    padding-top: 35px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 64px;
 }
 
 .header_container .logo_part img {
@@ -46,11 +48,10 @@ body {
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    color: #FFFFFF;
-    opacity: 0.3;
+    color: var(--gray-color);
 }
 .header_container a:hover {
-    opacity: 100%;
+    color: var(--white-color);
 }
 
 nav .auth {
@@ -60,4 +61,119 @@ nav .auth {
     border: 1px solid rgba(255, 255, 255, 0.6);
     padding: 6px 10px;
     border-radius: 75px;
+}
+
+
+    /* Main Styles */
+.main_background {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+    .main_background img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    opacity: 0.7;
+}
+
+.blue-btn {
+    background-color: #0040DD;
+    color: var(--white-color);
+}
+
+.white-btn {
+    background-color: var(--white-color);
+    color: black;
+}
+
+.white-btn .list {
+    width: 18px;
+    height: 18px;
+}
+
+.buttons {
+    position: absolute;
+    top: -20px;
+    left: 57px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.main_titles {
+    margin-bottom: 100px;
+}
+
+.single_title {
+    width: 1021px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--white-color);
+    margin-bottom: 35px;
+}
+
+.single_heading {
+    color: var(--white-color);
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+    /* Service cards */
+.cards {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.cards .card {
+    min-width: 406px;
+    width: 100%;
+    min-height: 509px;
+    border: 1px solid var(--white-color);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards .card h2 {
+    color: var(--white-color);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.cards .card p {
+    width: 305px;
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.btn-light {
+    width: 160px;
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+ 
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 600;
 }
