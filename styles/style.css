@@ -25,7 +25,7 @@ body {
 }
 
 
-    /* Header Styles */
+/* Header Styles */
 .header_container {
     padding-top: 35px;
     display: flex;
@@ -38,7 +38,8 @@ body {
     cursor: pointer;
 }
 
-.header_container nav, ul {
+.header_container nav,
+ul {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -50,6 +51,7 @@ body {
     font-weight: 500;
     color: var(--gray-color);
 }
+
 .header_container a:hover {
     color: var(--white-color);
 }
@@ -64,13 +66,13 @@ nav .auth {
 }
 
 
-    /* Main Styles */
+/* Main Styles */
 .main_background {
     position: relative;
     margin-bottom: 50px;
 }
 
-    .main_background img {
+.main_background img {
     width: 100%;
     margin: 0 auto;
 }
@@ -85,6 +87,7 @@ nav .auth {
     border: none;
     cursor: pointer;
 }
+
 .btn:hover {
     opacity: 0.7;
 }
@@ -136,7 +139,11 @@ nav .auth {
 }
 
 
-    /* Service cards */
+/* Service cards */
+.service {
+    margin-bottom: 100px;
+}
+
 .cards {
     width: 100%;
     display: flex;
@@ -172,8 +179,38 @@ nav .auth {
     width: 160px;
     background-color: transparent;
     border: 1px solid var(--white-color);
- 
+
     color: var(--white-color);
     font-size: 16px;
     font-weight: 600;
+}
+
+
+
+    /* Portfolio */
+.portfolio {
+    margin-bottom: 100px;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.img-wrapper div {
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.full_background {
+    margin-bottom: 50px;
+}
+
+.full_background img {
+    width: 100%;
+    margin: 0 auto;
 }
