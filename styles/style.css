@@ -38,8 +38,7 @@ body {
     cursor: pointer;
 }
 
-.header_container nav,
-ul {
+.header_container nav, nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
@@ -213,4 +212,78 @@ nav .auth {
 .full_background img {
     width: 100%;
     margin: 0 auto;
+}
+
+
+    /* Footer */
+.footer_container {
+    padding: 100px 0;
+    display: flex;
+    gap: 80px;
+}
+
+.footer_container form {
+    width: 363px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer_container form p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-color);
+}
+
+.footer_container form input {
+    padding: 9px 20px;
+    background-color: transparent;
+    border:1px solid var(--white-color);
+    border-radius: 50px;
+    color: var(--gray-color);
+}
+
+.footer_container form button {
+    width: 127px;
+}
+
+.footer_full_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_container .footer_wrappers{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.footer_wrappers ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.footer_wrappers h4 {
+    width: 78px;
+    color: var(--gray-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer_wrappers ul li {
+    width: 171px;
+}
+
+.footer_wrappers ul li a {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.footer_wrappers ul li a:hover {
+    opacity: 0.4;
 }
