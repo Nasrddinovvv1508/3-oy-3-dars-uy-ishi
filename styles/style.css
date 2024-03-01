@@ -265,6 +265,10 @@ nav .auth {
 
 
     /* Footer */
+.footer_wrapper {
+    border-top: 1px solid var(--gray-color);
+}
+
 .footer_container {
     padding: 100px 0;
     display: -webkit-box;
@@ -359,4 +363,11 @@ nav .auth {
 }
 .footer_wrappers ul li a:hover {
     opacity: 0.4;
+}
+
+
+
+    /* Services PAGE */
+.cards-bottom {
+    margin-bottom: 210px;
 }
